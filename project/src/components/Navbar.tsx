@@ -35,7 +35,7 @@ export default function Navbar() {
                   className="flex items-center space-x-2 text-xl font-bold text-gray-900 dark:text-white"
               >
                 <img
-                    src="/assets/images/logo_portfolio.png"
+                    src="/chemin/vers/votre/logo.png"
                     alt="Logo"
                     className="h-8 w-8 object-contain"
                 />
@@ -53,25 +53,32 @@ export default function Navbar() {
                 À propos de moi
               </Link>
               <Link
-                  to={isHomePage ? '#projects' : '/#projects'}
-                  onClick={() => scrollToSection('projects')}
-                  className="text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white transition-colors"
-              >
-                Projets
-              </Link>
-              <Link
                   to={isHomePage ? '#skills' : '/#skills'}
                   onClick={() => scrollToSection('skills')}
                   className="text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white transition-colors"
               >
-                Compétences
+                Mes Compétences
+              </Link>
+              <Link
+                  to={isHomePage ? '#projects' : '/#projects'}
+                  onClick={() => scrollToSection('projects')}
+                  className="text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white transition-colors"
+              >
+                Mes Projets
               </Link>
               <Link
                   to={isHomePage ? '#certifications' : '/#certifications'}
                   onClick={() => scrollToSection('certifications')}
                   className="text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white transition-colors"
               >
-                Certifications
+                Mes Certifications
+              </Link>
+              <Link
+                  to={isHomePage ? '#tech-watch' : '/#tech-watch'}
+                  onClick={() => scrollToSection('tech-watch')}
+                  className="text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white transition-colors"
+              >
+                Veille Technologique
               </Link>
               <button
                   onClick={toggleTheme}
@@ -123,16 +130,6 @@ export default function Navbar() {
                     À propos de moi
                   </Link>
                   <Link
-                      to={isHomePage ? '#projects' : '/#projects'}
-                      onClick={() => {
-                        scrollToSection('projects');
-                        setIsOpen(false);
-                      }}
-                      className="block px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white"
-                  >
-                    Projets
-                  </Link>
-                  <Link
                       to={isHomePage ? '#skills' : '/#skills'}
                       onClick={() => {
                         scrollToSection('skills');
@@ -140,7 +137,17 @@ export default function Navbar() {
                       }}
                       className="block px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white"
                   >
-                    Compétences
+                    Mes Compétences
+                  </Link>
+                  <Link
+                      to={isHomePage ? '#projects' : '/#projects'}
+                      onClick={() => {
+                        scrollToSection('projects');
+                        setIsOpen(false);
+                      }}
+                      className="block px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white"
+                  >
+                    Mes Projets
                   </Link>
                   <Link
                       to={isHomePage ? '#certifications' : '/#certifications'}
@@ -150,7 +157,17 @@ export default function Navbar() {
                       }}
                       className="block px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white"
                   >
-                    Certifications
+                    Mes Certifications
+                  </Link>
+                  <Link
+                      to={isHomePage ? '#tech-watch' : '/#tech-watch'}
+                      onClick={() => {
+                        scrollToSection('tech-watch');
+                        setIsOpen(false);
+                      }}
+                      className="block px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white"
+                  >
+                    Veille Technologique
                   </Link>
                 </div>
               </div>

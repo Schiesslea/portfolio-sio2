@@ -39,9 +39,9 @@ export default function Certifications() {
   const [selectedCertificate, setSelectedCertificate] = useState<{title: string, path: string} | null>(null);
 
   return (
-      <section id="certifications" className="py-20 bg-gray-50 dark:bg-gray-800">
+      <section id="certifications" className="min-h-screen py-20 bg-gray-50 dark:bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-center mb-16 text-gray-900 dark:text-white">Certifications</h2>
+          <h2 className="text-4xl font-bold text-center mb-16 text-gray-900 dark:text-white">Mes Certifications</h2>
 
           <div className="flex justify-center mb-8">
             <nav className="flex space-x-4">

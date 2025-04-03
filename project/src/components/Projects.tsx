@@ -3,12 +3,42 @@ import { Link } from 'react-router-dom';
 
 const projects = [
   {
-    title: 'CapWithStyle',
-    description: 'Site e-commerce de vente de casquettes',
-    image: '/assets/images/page accueil semaine 3 part1.PNG',
-    link: 'https://capwithstyle.com/',
-    path: '/projects/capwithstyle',
-    details: 'Un site e-commerce spécialisé dans la vente de casquettes personnalisées...'
+    title: 'Page détail commerce Client Roi',
+    description: 'Page détaillée pour les commerçants',
+    image: '/assets/images/commerce-detail.jpg',
+    link: 'https://clientroi.instawp.xyz/commercant/60th-faubourg-dole/',
+    path: '/projects/commerce-detail',
+    details: 'Une page détaillée pour présenter les informations des commerçants adhérents à Client Roi...'
+  },
+  {
+    title: 'Assoboxe',
+    description: 'Site web pour un club de boxe',
+    image: '/assets/images/assoboxe.jpg',
+    link: 'https://assoboxe.instawp.xyz/',
+    path: '/projects/assoboxe',
+    details: 'Un site web moderne pour un club de boxe offrant des informations sur les cours et les inscriptions...'
+  },
+  {
+    title: 'Plugin abécédaire',
+    description: 'Plugin WordPress pour Client Roi',
+    image: '/assets/images/abecedaire-plugin.jpg',
+    link: 'https://clientroi.instawp.xyz/abecedaire-commercants-client-roi/',
+    path: '/projects/plugin-abecedaire',
+    details: 'Un plugin WordPress permettant de créer un abécédaire des commerçants adhérents à Client Roi...'
+  },
+  {
+    title: 'Sanctions',
+    description: 'Application de gestion des sanctions',
+    image: '/assets/images/sanctions.jpg',
+    path: '/projects/sanctions',
+    details: 'Une application web permettant de gérer les sanctions des étudiants au sein du lycée...'
+  },
+  {
+    title: 'MA VIDEO EDITOR',
+    description: 'Logiciel de montage photos et vidéos',
+    image: '/assets/images/ma-video-editor.jpg',
+    path: '/projects/ma-video-editor',
+    details: 'Un logiciel complet pour le montage photos et vidéos avec des effets spéciaux...'
   },
   {
     title: 'BestMovie',
@@ -25,11 +55,11 @@ export default function Projects() {
   };
 
   return (
-      <section id="projects" className="py-20 bg-gray-50 dark:bg-gray-800">
+      <section id="projects" className="min-h-screen py-20 bg-gray-50 dark:bg-gray-800 flex items-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-center mb-16 text-gray-900 dark:text-white">Mes Projets</h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
                 <div
                     key={index}

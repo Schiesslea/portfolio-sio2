@@ -3,6 +3,7 @@ import About from '../components/About';
 import Projects from '../components/Projects';
 import Skills from '../components/Skills';
 import Certifications from '../components/Certifications';
+import TechWatch from '../components/TechWatch';
 import Footer from '../components/Footer';
 
 export default function Home() {
@@ -10,9 +11,10 @@ export default function Home() {
         <div className="min-h-screen bg-white dark:bg-gray-900">
             <Hero />
             <About />
-            <Projects />
             <Skills />
+            <Projects />
             <Certifications />
+            <TechWatch />
             <Footer />
         </div>
     );
